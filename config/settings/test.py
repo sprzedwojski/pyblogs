@@ -34,10 +34,10 @@ PASSWORD_HASHERS = ["django.contrib.auth.hashers.MD5PasswordHasher"]
 # ------------------------------------------------------------------------------
 TEMPLATES[0]["OPTIONS"]["loaders"] = [  # noqa F405
     (
-        "django.template.loaders.cached.Loader",
+        "django.templates.loaders.cached.Loader",
         [
-            "django.template.loaders.filesystem.Loader",
-            "django.template.loaders.app_directories.Loader",
+            "django.templates.loaders.filesystem.Loader",
+            "django.templates.loaders.app_directories.Loader",
         ],
     )
 ]

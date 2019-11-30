@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for entry in entries %}
+        <a href="{{ entry.link }}"><h3>{{ entry.title }}</h3></a>
+{#        <p>{{ entry.content.0.value | safe }}</p>#}
+        <p>{{ entry.summary | safe }}</p>
+        <hr/>
+{#        <p>{{ entry | safe }}</p>#}
+    {% endfor %}
+{% endblock content %}

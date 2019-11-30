@@ -60,7 +60,7 @@ DJANGO_APPS = [
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # "django.contrib.humanize", # Handy template tags
+    # "django.contrib.humanize", # Handy templates tags
     "django.contrib.admin",
 ]
 THIRD_PARTY_APPS = [
@@ -74,6 +74,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "pyblogs.users.apps.UsersConfig",
+    "rss.apps.RssConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
